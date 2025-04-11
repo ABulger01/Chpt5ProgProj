@@ -6,16 +6,10 @@
 using namespace std;
 
 int main() {
-    ifstream inFile("attached_assets/LineUp.txt");
-    string name;
+    ifstream InFile("LineUp.txt");
+  string name;
+// Check if file opened successfully
+  if (!InFile) {
+    cout << "Error opening file" << endl;
+  }
     
-    cout << "Names in the lineup:" << endl;
-    cout << "-----------------" << endl;
-    
-    while (getline(inFile, name)) {
-        cout << name << endl;
-    }
-    
-    inFile.close();
-    return 0;
-}
