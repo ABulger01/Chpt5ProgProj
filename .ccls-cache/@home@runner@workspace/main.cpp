@@ -28,7 +28,25 @@ int numberOfOrganisms;
     cout << "Enter the number of days they will multiply: ";
     cin >> daysMultiply;
   }
+// Convert the percentage
+    avgDailyincrease = avgDailyincrease / 100;
+
+  // Display the population growth for each day
+  cout << fixed << setprecision(2) << endl;
+    cout << "Day\tPopulation" << endl;
+    cout << "-----------------\n";
+    for (int day = 1; day <= daysMultiply; ++day) {
+        cout << day << "\t" << numberOfOrganisms << endl;
+        numberOfOrganisms += numberOfOrganisms * avgDailyincrease;
+    }
+    return 0;
+}  
+      
     
+   
+      
+  
+   
     
     
   
