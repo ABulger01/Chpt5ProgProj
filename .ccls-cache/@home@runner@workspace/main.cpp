@@ -14,13 +14,21 @@ int numberOfOrganisms;
     cout << "Enter the starting number of organisms: ";
     cin >> numberOfOrganisms;
   }
-    cout << "Enter the average daily increase: ";
+    cout << "Enter the average daily increase as a percentage: ";
     cin >> avgDailyincrease;
   if ( avgDailyincrease < 0) {
     cout << "Invalid input. The average daily increase must be a positive number." << endl;
     cout << "Enter the average daily increase: ";
     cin >> avgDailyincrease;
   }
-  
+    cout << "Enter the number of days they will multiply: ";
+    cin >> daysMultiply;
+  if ( daysMultiply < 1) {
+    cout << "Invalid input. The number of days must be at least 1 day" << endl;
+    cout << "Enter the number of days they will multiply: ";
+    cin >> daysMultiply;
+  }
+    
+    
     
   
