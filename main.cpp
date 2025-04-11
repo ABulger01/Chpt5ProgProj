@@ -29,7 +29,8 @@ int numberOfOrganisms;
     cin >> daysMultiply;
   }
 // Convert the percentage
-    avgDailyincrease = avgDailyincrease / 100;
+    double populationGrowth =  avgDailyincrease / 100;
+    avgDailyincrease = populationGrowth;
 
   // Display the population growth for each day
   cout << fixed << setprecision(2) << endl;
