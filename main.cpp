@@ -16,5 +16,11 @@ int numberOfOrganisms;
   }
     cout << "Enter the average daily increase: ";
     cin >> avgDailyincrease;
-  if ( avgDailyincrease < 0)
+  if ( avgDailyincrease < 0) {
+    cout << "Invalid input. The average daily increase must be a positive number." << endl;
+    cout << "Enter the average daily increase: ";
+    cin >> avgDailyincrease;
+  }
+  
+    
   
