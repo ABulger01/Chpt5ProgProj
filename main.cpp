@@ -25,11 +25,9 @@ int main() {
       } else if (guess < randomNumber) {
         cout << "Too Low!, try again" << endl;
       } else {
-        cout << "Congratulations!"
+        cout << "Congratulations! You've guessed the number in " << guessCount << " guesses." << endl;
       }
-      }
-        
-      }
-    }
-    
-   
+    } while (guess != randomNumber);
+  }
+
+      return 0;
