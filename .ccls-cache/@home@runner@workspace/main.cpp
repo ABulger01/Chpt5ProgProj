@@ -13,5 +13,23 @@ int main() {
 
     int guess;
     int guessCount= 0;
+
+    cout << "Guess the number between 1 and 100: ";
+
+    do {
+      cin >> guess;
+      guessCount++;
+
+      if (guess > randomNumber) {
+        cout << "Too high!, try again" << endl;
+      } else if (guess < randomNumber) {
+        cout << "Too Low!, try again" << endl;
+      } else {
+        cout << "Congratulations!"
+      }
+      }
+        
+      }
+    }
     
    
